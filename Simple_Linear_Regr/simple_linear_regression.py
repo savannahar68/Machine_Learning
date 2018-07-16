@@ -36,8 +36,8 @@ print(dataFrame.head())
 
 x = np.array(dataFrame.drop(['label'], 1)) # Everything except label
 x = preprocessing.scale(x)
-x_lately = x[-forecast_out:] #for prediction
-x = x[:-forecast_out:]
+x_lately = x[-forecast_out:] #for prediction remaining 10% of data
+x = x[:-forecast_out] # First 90% of data here
 
 dataFrame.dropna(inplace = True)
 y = np.array(dataFrame['label'])
