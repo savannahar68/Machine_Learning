@@ -7,3 +7,5 @@ There are types of Kernel each supporting a different category <br/>
 1.Linear<br/>
 2.RBF<br/>
 3.Polynomial<br/>
+
+We'll also build SVM from scratch using Vectors.
